@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.event-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar,
+.event-list {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .calendar,
+  .event-list {
+    width: 48%;
+  }
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: #333;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.calendar td {
+  color: #333;
+}
+
+.calendar td.empty {
+  background-color: #f4f4f4;
+}
+
+.calendar td.event {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.calendar td.weekend {
+  color: #e53935;
+}
